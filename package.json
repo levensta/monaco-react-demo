@@ -1,0 +1,19 @@
+{
+	"name": "browser-esm-vite-react",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"serve": "vite preview",
+		"simpleserver": "node ../node_modules/yaserver/bin/yaserver --root ./dist --port 9999"
+	},
+	"devDependencies": {
+		"@types/react": "^18.2.18",
+		"@types/react-dom": "^18.2.7",
+		"@vitejs/plugin-react": "^1.1.4",
+		"monaco-editor": "^0.40.0",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"typescript": "^5.0.2",
+		"vite": "^2.9.16"
+	}
+}
