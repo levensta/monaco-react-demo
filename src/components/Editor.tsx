@@ -23,6 +23,18 @@ export function Editor() {
 		return () => editor?.dispose();
 	}, [monacoEl.current]);
 
+	// Auto theme
+	useEffect(() => {
+		const matchDarkTheme = window.matchMedia('(prefers-color-scheme:dark)')
+		if (matchDarkTheme.matches) {
+			monaco.editor.setTheme('vs-dark')
+		}
+		matchDarkTheme.addEventListener('change',(e) => {
+			const theme = e.matches? 'vs-dark' : 'light'
+			monaco.editor.setTheme(theme)
+		})
+	}, [])
+
 	const handleFullscreenClick = () => {
 		setFullscreenToggle((prev) => !prev);
 	}

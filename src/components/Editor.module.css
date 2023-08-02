@@ -10,6 +10,14 @@
 	--outline: 229,229,229;
 }
 
+@media (prefers-color-scheme:dark) {
+	:root {
+		--bg-primary: 18,21,28;
+		--bg-secondary: 32,35,42;
+		--outline: 255,255,255;
+	}
+}
+
 body {
 	display: flex;
 	flex-direction: column;
