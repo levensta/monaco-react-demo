@@ -1,10 +1,9 @@
 {
-	"name": "browser-esm-vite-react",
+	"name": "monaco-react-demo",
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc && vite build",
-		"serve": "vite preview",
-		"simpleserver": "node ../node_modules/yaserver/bin/yaserver --root ./dist --port 9999"
+		"serve": "vite preview"
 	},
 	"devDependencies": {
 		"@types/react": "^18.2.18",
