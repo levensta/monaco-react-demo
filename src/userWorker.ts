@@ -23,7 +23,3 @@ self.MonacoEnvironment = {
 		return new editorWorker();
 	}
 };
-
-monaco.languages.json.jsonDefaults.setDiagnosticsOptions({
-	validate: true,
-})
